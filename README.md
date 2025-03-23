@@ -50,25 +50,15 @@ panR --ncbi-dir ./data/ncbi_clean.csv --abricate-dir ./data/abricate --output-di
 ```
 
 ## Outputs
-output_directory/
-├── merged_output/
-│   ├── ncbi_abricate_summary1.csv
-│   ├── ncbi_abricate_summary1_tidy_summary.csv
-│   └── ...
-├── Summary/
-│   ├── abricate_summary1_gene_presence_lollipop.svg
-│   ├── abricate_summary1_gene_presence_percentage.svg
-│   ├── abricate_summary1_country_comparison_heatmap.svg
-│   └── ...
-└── ...
+
 - **Processed Data:** Saved in `output/` directory as `.csv`.
 - **Visualizations:**
   - Heatmap of resistance genes across samples.
   ![figure1](figures/figure1.png)
   - Bar plot showing gene presence.
-  ![figure2](figures/figure2.png)
-  - lolipoplot showing gene counts
   ![figure3](figures/figure3.png)
+  - lolipoplot showing gene counts
+  ![figure2](figures/figure2.png)
 
 ## License
 This tool is provided under the MIT License.
