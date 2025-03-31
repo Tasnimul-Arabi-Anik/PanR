@@ -34,9 +34,6 @@ def load_and_merge_data(ncbi_clean_path, abricate_summary_file):
         ncbi_clean_df = pd.read_csv(ncbi_clean_path)
         abricate_summary_df = pd.read_csv(abricate_summary_file)
         
-        # Drop unnecessary columns
-        abricate_summary_df.drop(columns=["Assembly Name"], inplace=True)
-        
         # Extract Assembly Accession from the '#File' column
         file_col = "#File" if "#File" in abricate_summary_df.columns else "#FILE"
         abricate_summary_df["Assembly Accession"] = abricate_summary_df[file_col].str.extract(r"(GCF_\d+\.\d+)")

@@ -1,19 +1,19 @@
 from setuptools import setup
 
 setup(
-    name="panR",
-    version="0.1.0",
+    name="PanR",
+    version="0.1.1",
     author="Tasnimul Arabi Anik",
     author_email="arabianik987@gmail.com",
     description="A Python tool for panresistome analysis",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/Tasnimul-Arabi-Anik/PanR",
-    scripts=["bin/PanR"],  # Include the script from the bin directory
+    scripts=["bin/panR"],  # Include the script from the bin directory
     install_requires=[
-        "pandas>=2.0.0"
-        "matplotlib>=3.7.0"
-        "seaborn>=0.12.0"
+        "pandas>=2.0.0",
+        "matplotlib>=3.7.0",
+        "seaborn>=0.12.0",
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
